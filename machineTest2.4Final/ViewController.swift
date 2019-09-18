@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.count == 3 {
-        searchResult = snacksArray.filter({$0.prefix(searchText.count) == searchText})
+            searchResult = snacksArray.filter({$0.prefix(searchText.count) == searchText.lowercased()})
         searching = true
         tblView.reloadData()
     }
