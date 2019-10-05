@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tblView: UITableView!
+    
     @IBOutlet weak var searchText: UISearchBar!
+    
     let snacksArray = ["Pani-puri", "samosa chaat", "bhaje", "pakodi", "edli", "poha", "vdapav", "bakarwadi", "bhel", "kachori", "Bhujiya", "Ghujiya", "chaat", "Samose", "Dosa", " Sev-Parmal", "Laddoo", "Poha", "Dum Aloo", "Shikhanji", "Gulabjamun"]
     
     var searching : Bool = false
